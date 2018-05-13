@@ -5,7 +5,6 @@ add_executable(ocl_query source/platform.cpp)
 
 # Intel SDK takes priority
 if (NOT "$ENV{INTELOCLSDKROOT}" STREQUAL "")
-	set(OpenCL_INCLUDE_DIRS "$ENV{INTELOCLSDKROOT}/include")
 	if (${CMAKE_VS_PLATFORM_NAME} STREQUAL "x64")
 		set(OpenCL_LIBRARIES "$ENV{INTELOCLSDKROOT}/lib/x64/OpenCL.lib")
 	elseif (${CMAKE_VS_PLATFORM_NAME} STREQUAL "Win32")
