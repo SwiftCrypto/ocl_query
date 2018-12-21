@@ -2,7 +2,7 @@
 OpenCL Query program
 
 ## Build
-Make sure that `cmake` v3.1 and above is installed on your system, as the 
+Make sure that `cmake` v3.13 or above is installed on your system, as the 
 build system is based on it.
 
 ### Build For Windows,
@@ -29,10 +29,10 @@ In a command prompt window, `cd` to where this source is located, and type
 ```
 $ mkdir build
 $ cd build
-$ cmake -G "Visual Studio 14 2015" ..
+$ cmake -G "Visual Studio 15 2017" -A x64 ..
 ```
 
-Note that the last command generates Visual Studio 2015 solution and 
+Note that the last command generates Visual Studio 2017 solution and 
 project files. You may specify any other Visual Studio version that you 
 have installed. 
 
